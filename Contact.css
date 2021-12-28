@@ -1,0 +1,49 @@
+header{
+    height:30vh;
+}
+#Content{
+    display:flex;
+    text-align: center;
+    justify-content: center;
+}
+.formulaire{
+    border:1px solid blue;
+    width:700px;
+    padding:0 50px 20px 50px;
+    margin:40px 0 40px 0;
+}
+form{
+    display:flex;
+    flex-direction: column;
+}
+form div{
+    padding: 5px 0;
+}
+.responsive{
+    display: none;
+}
+.submit{
+    transition: 0.5s;
+}
+.submit:hover{
+    background:rgb(69, 69, 236);
+}
+.Offset{
+    position:relative;
+    top:-75px;
+}
+@media(max-width:580px){
+    .formulaire{
+        width:300px;
+    }
+    .classic{
+        display:none;
+    }
+    .responsive{
+        display:block;
+    }
+    .Offset{
+        position:relative;
+        top:0;
+    }
+}

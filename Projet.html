@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Damien Willemain">
+        <meta name="description" content="PorteFolio de Damien Willemain">
+        <meta name="keywords" content="Porte folio, Damien Willemain, programmeur, informatique">
+        <meta name="robots" content="index">
+        <meta name="robots" content="follow">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="Main.css">
+		<link rel="stylesheet" href="Projet.css">
+		<title>Projets</title>
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script src="https://kit.fontawesome.com/1753653cd4.js" crossorigin="anonymous"></script>
+		<!--style type="text/css">* {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat927.ani), url(https://cur.cursors-4u.net/nature/nat-10/nat927.png), auto !important;}</style><a href="https://www.cursors-4u.com/cursor/2011/10/28/animated-nyan-cat-rainbow.html" target="_blank" title="Animated Rainbow Nyan Cat"><img src="https://cur.cursors-4u.net/cursor.png" border="0" alt="Animated Rainbow Nyan Cat" style="position:absolute; top: 0px; right: 0px;" /></a-->
+    </head>
+    <body> 
+		<header>
+			<div id="HDP"></div>
+			<nav>
+					<!--Menu en haut-->
+				<div class="hamburg">
+				<i class="fa fa-bars fa-2x"></i>
+				</div>	
+				<div class="logo">
+				Img
+				</div>
+				<div class="menu">
+					<ul>
+						<li><a href="Index.html"><span>Accueil</span></a></li>
+						<li><a href="Projet.html" class="current"><span>Projets</span></a></li>
+						<li><a href="Parcours.html"><span>Parcours/Formation</span></a></li>
+						<li><a href="Competences.html"><span>Competences</span></a></li>
+						<li><a href="Contact.html"><span>Contact</span></a></li>
+					</ul>
+				</div>
+	
+			</nav>
+		</header>
+		<div class="Offset"></div>
+		<!--Fleche pour descendre + HDP/ voir script en fin de doc pour option d'activation/desactivation-->
+		<div class="arrow_down">
+			<i class="fas fa-arrow-circle-down fa-2x"></i>
+		</div>
+		<a href="#HDP" class="arrow_up">
+			<i class="fas fa-arrow-circle-up fa-2x"></i>
+		</a>
+		<!---->
+		<div ID="Content">
+			<div class="intro">
+				<h1>Projets</h1>
+				<div>
+					<p> Cette rubrique reprend les différents projets que j'ai pu développer dans le cadre de mes <span class="rose">études et sur mon temps libre</span>.<br>
+					Cela implique un <span class="rose">travail en équipe, ou en totale autonomie</span> selon le format du projet.<br></p>
+				</div>
+			</div>
+			<div class="bloc">
+				<div class="ss_bloc">
+					<div class="container">
+						<div class="rel">
+							<img src="./IMG/Poker.jpg" alt="Image de poker" class="image">
+						</div>
+					</div>
+					<div class="IB">
+						<ul>
+							<li><strong>Jeu de poker</strong></li>
+							<li>-</li>
+							<li>Developpement jeu de Poker en Python.<br>
+								Pas de graphisme, purement codé.<br>
+								<strong>Python</strong> / Temps: 100h / Equipe: 1pax<br><br></li>
+								<hr>
+						</ul>
+					</div>
+				</div>
+				<div class="ss_bloc">
+					<div class="container">
+						<div class="rel">
+							<img src="./IMG/portfolio.png" alt="Image du portfolio" class="image">
+						</div>
+					</div>
+					<div class="IB">
+						<ul>
+							<li><strong>Portfolio</strong></li>
+							<li>-</li>
+							<li>Création et amélioration Portfolio.<br>
+								Il s'agit du site sur lequel vous navigué actuellement.<br>
+								<strong>HTML, CSS, JS</strong> / Temps: 200h / Equipe 1pax<br><br></li>
+								<hr>
+						</ul>
+					</div>
+				</div>
+				<div class="ss_bloc">
+					<div class="container">
+						<div class="rel">
+							<img src="./IMG/magictutor.png" alt="Image de projet MagicTutor" class="image">
+						</div>
+					</div>
+					<div class="IB">
+						<ul>
+							<li><strong>Magic Tutor</strong></li>
+							<li>-</li>
+							<li>Gestion de Projet.<br>
+								(création théorique) Plateforme numérique de mise en relation entre étudiants (tuteur-tutoré).<br>
+								<strong>Méthode Agile, Gantt</strong> / Temps: 20h / Equipe: 5pax<br><br></li>
+								<hr>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<hr>
+			<div>
+				<div>
+					<ul>
+						<li class="lkdyn"><a href="./etc/CV.pdf" target="_blank">CV</a></li>
+						<li class="lkdyn"><a href="./contact.html">Me contacter</a></li>
+					</ul>
+				</div>
+				<div>
+					<p> © Damien.Willemain 2021
+					</p>
+				</div>
+				<div>
+					<ul>
+						<li class="lkdyn">
+							<a href="mailto:dwillemain@hotmail.fr">mail @</a>
+						</li>
+						<li><a href="http://www.linkedin.com/in/damien-willemain-5a5b57142" target="_blank">
+							<img class="icones" src="./IMG/linkedin.jpg">
+						</a>
+							<img class="icones" src="./IMG/Github1.png">
+							<img class="icones" src="./IMG/Instagram.jpg">
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+	<!-- Scripts:
+		1) Hamburger lors format tablette/mobile
+		2) Barre de menu prend classe .scroll lorsque l'on descend (opaque + fond noir)
+		3) Script pour descendre en cliquant sur la flêche blanche
+		4) Script pour faire disparaitre fleche qui descend et apparaitre fleche HDP-->
+
+		<script>
+			$(document).ready(function(){
+				$('.hamburg').on('click', function(){
+					$('nav ul').toggleClass('menu');
+				});
+			});
+	
+	
+			$(window).on("scroll", function(){
+				if($(window).scrollTop()){
+					$('nav').addClass('scroll');
+				}
+				else {
+					$('nav').removeClass('scroll');
+				}
+			})
+	
+			$(document).ready(function() {
+					$(".arrow_down").click(function(event){
+						$('html, body').animate({scrollTop: '+=350px'}, 800);
+				});
+			});
+	
+			$(function() {
+				$(window).scroll(function() {
+					if($(window).scrollTop() > $(".Offset").offset().top+$(".Offset").height()){
+					$(".arrow_up").show();
+					$(".arrow_down").hide();
+						}
+				else{
+					$(".arrow_down").show();
+					$(".arrow_up").hide();
+					}
+				});
+			});
+		</script>
+    </body>
+</html>

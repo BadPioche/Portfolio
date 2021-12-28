@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="author" content="Damien Willemain">
+        <meta name="description" content="PorteFolio de Damien Willemain">
+        <meta name="keywords" content="Porte folio, Damien Willemain, programmeur, informatique">
+        <meta name="robots" content="index">
+        <meta name="robots" content="follow">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="Main.css">
+		<link rel="stylesheet" href="Contact.css">
+		<title>Contact</title>
+		<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+		<script src="https://kit.fontawesome.com/1753653cd4.js" crossorigin="anonymous"></script>
+    </head>
+    <body> 
+		<header>
+			<div id="HDP">
+			</div>
+		<nav>
+			<!--apparait sous contrainte de taille (voir @media Main.css)-->
+			<div class="hamburg">
+				<i class="fa fa-bars fa-2x"></i>
+			</div>
+			<!---->
+			<div class="logo">
+			Img
+			</div>
+			<!--disparait sous contrainte de taille (voir @media Main.css)-->
+			<div class="menu">
+				<ul>
+					<li><a href="Index.html"><span>Accueil</span></a></li>
+					<li><a href="Projet.html"><span>Projets</span></a></li>
+					<li><a href="Parcours.html"><span>Parcours/Formation</span></a></li>
+					<li><a href="Competences.html"><span>Competences</span></a></li>
+					<li><a href="Contact.html"><span class="current">Contact</span></a></li>
+				</ul>
+			</div>
+			<!---->
+		</nav>
+		</header>
+			<div class="Offset"></div>
+			<!--Fleche pour descendre + HDP/ voir script en fin de doc pour option d'activation/desactivation-->
+			<div class="arrow_down">
+				<i class="fas fa-arrow-circle-down fa-2x"></i>
+			</div>
+			<a href="#HDP" class="arrow_up">
+				<i class="fas fa-arrow-circle-up fa-2x"></i>
+			</a>
+			<!---->
+			<div ID="Content">
+				<div class="formulaire">
+					<div class="title">
+						<h3>Formulaire de Contact</h3>
+					</div>
+					<form action="#" method="post">
+						<div>
+							<label><span>Votre nom</span><br>
+								<input type="text" name="Nom" placeholder="Nom" required><br>
+							</label>
+						</div>
+						<div>
+							<label>Votre prénom<br>
+								<input type="text" name="Prénom" placeholder="Prénom"><br>
+							</label>
+						</div>
+						<div>
+							<label>Votre email<br>
+								<input type="email" name="Email" placeholder="monadresse@mail.com" required><br>
+							</label>
+						</div>
+						<div>
+							<label class="classic">Votre message: <br>
+								<textarea name="message" placeholder="Entrez votre message" cols="50" rows="10"></textarea><br>
+							</label>
+							<label class="responsive">Votre message: <br>
+								<textarea name="message" placeholder="Entrez votre message" cols="30" rows="10"></textarea><br>
+							</label>
+						</div>
+						<div>
+							<button type="submit" class="submit">Envoyer</button><br>
+						</div>
+
+					</form>
+				</div>
+			</div>
+			<footer>
+				<hr>
+				<div>
+					<div>
+						<ul>
+							<li class="lkdyn"><a href="./etc/CV.pdf" target="_blank">CV</a></li>
+							<li class="lkdyn"><a href="./contact.html">Me contacter</a></li>
+						</ul>
+					</div>
+					<div>
+						<p> © Damien.Willemain 2021
+						</p>
+					</div>
+					<div>
+						<ul>
+							<li class="lkdyn">
+								<a href="mailto:dwillemain@hotmail.fr">mail @</a>
+							</li>
+							<li><a href="http://www.linkedin.com/in/damien-willemain-5a5b57142" target="_blank">
+								<img class="icones" src="./IMG/linkedin.jpg">
+							</a>
+								<img class="icones" src="./IMG/Github1.png">
+								<img class="icones" src="./IMG/Instagram.jpg">
+							</li>
+						</ul>
+					</div>
+				</div>
+			</footer>
+	
+			<!-- Scripts:
+				1) Hamburger lors format tablette/mobile
+				2) Barre de menu prend classe .scroll lorsque l'on descend (opaque + fond noir)
+				3) Script pour descendre en cliquant sur la flêche blanche
+				4) Script pour faire disparaitre fleche qui descend et apparaitre fleche HDP-->
+	
+			<script>
+			$(document).ready(function(){
+				$('.hamburg').on('click', function(){
+					$('nav ul').toggleClass('menu');
+				});
+			});
+	
+	
+			$(window).on("scroll", function(){
+				if($(window).scrollTop()){
+					$('nav').addClass('scroll');
+				}
+				else {
+					$('nav').removeClass('scroll');
+				}
+			})
+	
+			$(document).ready(function() {
+				  $(".arrow_down").click(function(event){
+					 $('html, body').animate({scrollTop: '+=350px'}, 800);
+				});
+			});
+	
+			$(function() {
+				$(window).scroll(function() {
+					if($(window).scrollTop() > $(".Offset").offset().top+$(".Offset").height()){
+					$(".arrow_up").show();
+					$(".arrow_down").hide();
+						}
+				else{
+					$(".arrow_down").show();
+					$(".arrow_up").hide();
+					}
+				});
+			});
+			</script>
+    </body>
+</html>
